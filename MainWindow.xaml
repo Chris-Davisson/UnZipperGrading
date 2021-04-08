@@ -1,0 +1,27 @@
+﻿<Window x:Class="UnZipGrading.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnZipGrading"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Name="source_lbl" Content="Source" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="91" FontSize="20"/>
+        <Label Name="dest_lbl" Content="Destination" HorizontalAlignment="Left" Margin="10,151,0,0" VerticalAlignment="Top" Width="120" FontSize="20"/>
+        <Label x:Name="output_lbl" Content="Output" HorizontalAlignment="Left" Margin="374,5,0,0" VerticalAlignment="Top" Width="91" FontSize="20"/>
+        
+        <TextBox Name="source_txt" HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" 
+                       VerticalAlignment="Top" Width="359" Height="72" SpellCheck.IsEnabled="True" TextChanged="source_txt_TextChanged" Text="Enter Absolute Source path..." GotKeyboardFocus="source_txt_GotKeyboardFocus" LostFocus="txt_LostFocus" />
+        
+        <TextBox Name="dest_txt" HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Enter Absolute Destination path..." 
+                       VerticalAlignment="Top" RenderTransformOrigin="-0.286,-1.098" Width="359" Height="72" SpellCheck.IsEnabled="True" TextChanged="dest_txt_TextChanged" GotKeyboardFocus="dest_txt_GotKeyboardFocus" LostFocus="txt_LostFocus"/>
+        
+        <TextBox Name="output_txt" HorizontalAlignment="Left" Margin= "374,47,0,0" TextWrapping="Wrap" Text="..." 
+                       VerticalAlignment="Top" Width="386" Height="340"/>
+        
+        <Button Name="start_btn" Content="Do The Thing!" HorizontalAlignment="Left" Margin="88,300,0,0" VerticalAlignment="Top" Width="75" Click="start_btn_Click"/>
+       
+
+    </Grid>
+</Window>
